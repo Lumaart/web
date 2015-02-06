@@ -1,0 +1,28 @@
+.footer-container {
+	width: 100%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.footer-container ul{
+	width: 100%;
+	height: 100%;
+}
+
+.footer-container ul li{
+	display: inline-block;
+	margin: 0 0.5em;
+	line-height: 3.5em; 
+	color: #AAB2BD;
+}
+
+.footer-container ul li a {
+	width: auto;
+	height: auto; 
+	display: initial;
+}
+
+
+.footer-container ul li i, .footer-container ul li a {color:#AAB2BD; transition: color 0.15s ease;}
+.footer-container ul li i:hover, .footer-container ul li a:hover {color:#CCD1D9; }
+.footer-container ul li i:active, .footer-container ul li a:active {color: #AAB2BD;}

@@ -1,0 +1,130 @@
+.mobile-header {
+	width: 100%;
+	height: 4em;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+}
+
+.mobile-header .toggle-navigation {
+	display: inline-block;
+	width: 38%;
+	height: 100%;
+	background-color: red;
+}
+
+.mobile-header .logo-container-mobile {
+	height: 100%;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.mobile-header .logo-container-mobile img {
+	height: 100%;
+}
+
+.navigation-container{
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	transform: translateY(-100%);
+	position: fixed;
+
+	-webkit-transition:transform 0.3s ease;
+
+	   -moz-transition:transform 0.3s ease;
+
+	     -o-transition:transform 0.3s ease;
+
+	        transition:transform 0.3s ease;
+}
+
+.navigation-container ul {
+	width: 100%;
+	height: auto;
+}
+
+.navigation-container ul li {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid grey;
+}
+
+.navigation-container ul li a {
+	padding: 2em 0.5em;
+	font-size: 1.2em;
+	color: rgba(0,0,0,0.55);
+	font-family: 'Roboto';
+	transition: color 0.25s ease;
+}
+
+.navigation-container ul li a:hover {color: rgba(0,0,0,0.9);}
+.navigation-container ul li a:active {color: rgba(0,0,0,0.55);}
+
+.navigation-container ul li .active {color: rgba(0,0,0,0.9);}
+
+.is-opened {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.logo-container {
+	display: none;
+}
+
+
+@media all and (min-width: 1000px) {
+	.mobile-header {
+		display: none;
+	}
+
+	.navigation-container {
+		height: 8em;
+		text-align: left;
+		z-index: 9999;
+		-webkit-transform: translateY(0%);
+		   -moz-transform: translateY(0%);
+		    -ms-transform: translateY(0%);
+		     -o-transform: translateY(0%);
+		        transform: translateY(0%);
+
+	}
+
+	.navigation-container ul {
+		width: auto;
+		height: 100%;
+		float: left;
+		width: 50%;
+	}
+
+	.navigation-container ul li {
+		display: inline-block;
+		width: auto;
+		height: 100%;
+		line-height: 8em;
+		border-bottom: 0;
+	}
+
+	.navigation-container ul li a {
+		padding: 0;
+		margin: 0 1em;
+		font-size: 1.5em;
+	}
+
+	.logo-container {
+		display: block;
+		height: 100%;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.logo-container img {
+		height: 100%;
+	}
+}

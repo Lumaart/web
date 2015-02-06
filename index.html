@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luma art | Photography and Cinema</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500&subset=latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fancybox/source/fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+</head>
+<body>
+
+	<!-- [START] Navigation -->
+
+		<div class="navigation-container">
+			<div class="logo-container"><img src="images/logo.png"></div>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="photo.html">Photo</a></li>
+				<li><a href="cinema.html">Cinema</a></li>
+				<li><a href="about-us-contact.html">About us & Contact</a></li>
+			</ul>
+		</div>
+
+		<!-- [START] Mobile header (min-width: 768px) -->
+		<div class="mobile-header">
+			<!-- <div class="toggle-navigation"><i class="fa fa-menu fa-lg"></i></div> -->
+			<div class="logo-container-mobile"><img src="images/logo.png"></div>
+		</div>	
+		<!-- [END] Mobile header (min-width: 768px) -->
+	<!-- [END] Navigation -->
+
+	<!-- [START] Video -->
+
+		<div class="video-container">
+		    <div class="media">
+		        <video width="320" height="240" autoplay loop>
+		            <source src="video/video.mp4" type="video/mp4">
+		            Your browser does not support the video tag.
+		        </video>
+		    </div>
+		    <div class="black-overlay">
+		        <div class="text-box">
+		            <h3>Photography & Cinema</h3>
+		            <h2>Luma art</h2>
+		            <a class="fancybox-media" href="http://vimeo.com/36031564">Watch the film <i class="fa fa-play-circle-o fa-lg"></i></a>
+		        </div>
+		    </div>
+		</div>
+
+	<!-- [END] Video -->
+
+
+	<!-- [START] Footer -->
+		<div class="footer-container">
+			<ul>
+				<li><a href="https://www.facebook.com/luma.art.hr"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+				<li><a href="http://vimeo.com/user2330125"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+				<li> | Copyright © 2015<a href="http://lumaart.hr"> Luma art</a></li>
+			</ul>
+		</div>
+	<!-- [END] Footer -->
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
+</script>
+
+</body>
+</html>

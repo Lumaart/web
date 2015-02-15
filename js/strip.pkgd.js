@@ -1655,8 +1655,8 @@ $.extend(Page.prototype, {
 
     // page needs a fixed width to remain properly static during animation
     var pageDimensions = {
-      width: fitted.width + paddingX,
-      height: fitted.height + paddingY + cH
+      width: $(window).width(),
+      height: $(window).height()
     };
     // fullscreen mode uses viewport dimensions for the page
     if (isFullscreen) pageDimensions = viewport;

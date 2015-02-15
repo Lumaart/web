@@ -2,6 +2,7 @@
     width:  100%;
     height: auto;
     position: relative;
+    margin: 0 0 2em;
 }
 
 .media {
@@ -63,7 +64,7 @@
     margin-top: -0.2em;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 700px) {
     .video-container .media  {
         background:none;
         height: 100%;

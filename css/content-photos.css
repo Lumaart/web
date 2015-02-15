@@ -1,50 +1,52 @@
-.video-container {
-    width:  100%;
-    height: auto;
+.container {
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6em 10px 2em;
     position: relative;
 }
 
-.media {
-    width:  auto;
-    height: 35em;
-    background-image: url('../images/image1.jpg');
-    background-position: 50% -20%;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-
-    z-index:  0;
-    overflow:  hidden;
+.picture-item {
+    display: block;
+    position: relative;
+    float: left;
+    margin: .2%;
+    overflow: hidden;
 }
 
-.black-overlay {
-    width: 100%;
-    background: rgba(0,0,0,0.3);
-    position:     absolute;
-    top: 0;
-    bottom: 0;
+.picture-item:nth-child(1), .picture-item:nth-child(9) {
+    height: 0px;
+    padding-bottom: 51.1385%;
+    width: 66.4%;
 }
 
-.black-overlay .text-box {
-    color: white !important;
-    text-align:  center;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.65);
+.picture-item:nth-child(2), .picture-item:nth-child(3), .picture-item:nth-child(5), .picture-item:nth-child(6), .picture-item:nth-child(10), .picture-item:nth-child(11), .picture-item:nth-child(13), .picture-item:nth-child(14) {
+    height: 0px;
+    padding-bottom: 25.3692%;
+    width: 32.8%;
+    margin-right: 0px;
+}
 
+.picture-item:nth-child(4), .picture-item:nth-child(12) {
+    height: 0px;
+    padding-bottom: 51.1385%;
+    width: 66.4%;
+    float: right;
+}
+
+.picture-item:nth-child(7), .picture-item:nth-child(8), .picture-item:nth-child(15), .picture-item:nth-child(16) {
+    height: 0px;
+    padding-bottom: 38.2615%;
+    width: 49.6%;
+}
+
+.container a img {
+    height: 100%;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 150px;
-}
-.black-overlay .text-box h1 {font-size: 3.5em;}
-
-.black-overlay .text-box h2 {font-size: 3em;}
-.black-overlay .text-box h3 {font-size: 2em;}
-
-@media all and (min-width: 1000px) {
-    .black-overlay .text-box h1 {font-size: 7.5em;}
-    .black-overlay .text-box h2 {font-size: 6em;}
-    .black-overlay .text-box h3 {font-size: 5em;}
-    .media {height:75em }
 }
 
+@media all and (min-width: 700px) {
+    .container {
+        padding: 10em 10px 2em;
+    }
+}

@@ -271,7 +271,7 @@
   filter: alpha(opacity=80);
   opacity: .8;
 }
-.strp-close:hover .strp-close-background { background-color: #161616; }
+/*.strp-close:hover .strp-close-background { background-color: #161616; }*/
 
 
 .strp-has-error .strp-container { background-color: #ca3434; }
